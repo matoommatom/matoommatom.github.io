@@ -1,0 +1,94 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+h1 {
+  background-color: none;
+}
+
+.avatar {
+  width: 210px;
+  margin-bottom: 40px;
+  /*have space below the profile pic*/
+  border-radius: 40%;
+  object-fit: cover;
+  box-shadow: 5px 10px gray;
+}
+.container {
+  /*background-color: #eddcd2;*/
+  background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url("https://images.unsplash.com/photo-1587317996312-6314ec7b5a06?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2100&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom left;
+  /*insert image in css bc it's for decoration not as a content in HTML*/
+  min-height: 100vh;
+  /*100percent of view portion height 
+  but if content is wider than viewer height, it can be scolled down and background still cover all contents >> for min-height: */
+  padding: 128px;
+}
+
+@media screen and (max-width: 768px) {
+  /*these css rules below will be applied only if the device screen is not bigger than 768px which is normal size for standard tablet 
+  (these conditions used for iphone and tablet)*/
+  .container {
+    padding: 48px;
+  }
+}
+
+.content {
+  max-width: 600px;
+}
+
+.name {
+  font-size: 48px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  color: #6b705c;
+}
+
+/*media condition of name class must be under the name class*/
+@media screen and (max-width: 768px) {
+  .name {
+    font-size: 36px;
+  }
+}
+
+.job {
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.about {
+  font-size: 16px;
+  font-weight: 300;
+  color: #6b705c;
+  margin-bottom: 24px;
+}
+
+.contact {
+  margin-bottom: 48px;
+}
+
+.contact-item {
+  margin-bottom: 2px;
+}
+
+.button {
+  margin-top: 24px;
+  background-color: #6b705c;
+  color: white;
+  padding: 12px 24px; /*size of box: vertical horizontal*/
+  text-decoration: none;
+}
+
+.contact-icon {
+  margin-right: 4px;
+  width: 16px;
+}
